@@ -162,3 +162,96 @@ img:hover {
   transform: scale(1.05); /* Slight zoom */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Shadow on hover */
 }
+
+/* ---------------- Responsive Design ---------------- */
+
+/* Mobile (up to 768px width) */
+@media (max-width: 768px) {
+
+  /* Header: stack logos and text vertically */
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .header-text {
+    margin: 15px 0;
+  }
+
+  /* Logos smaller on mobile */
+  .logo-left, .logo-right {
+    width: 120px;
+    height: 120px;
+    margin: 5px 0;
+  }
+
+  /* Brand name smaller */
+  .brand-name {
+    font-size: 28px;
+  }
+
+  /* Tagline smaller */
+  .tagline {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  /* Boxes full width with smaller padding */
+  .box {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  /* Images smaller on mobile */
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Floating Contact Button smaller */
+  .contact-floating {
+    width: 90px;
+    height: 45px;
+    padding: 8px 10px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .contact-floating:hover {
+    width: 220px;
+    height: 180px;
+    padding: 15px;
+  }
+
+  .contact-label {
+    font-size: 16px;
+  }
+
+  .contact-info p {
+    font-size: 14px;
+  }
+}
+
+/* Optional: Extra small devices (phones < 480px) */
+@media (max-width: 480px) {
+
+  .brand-name {
+    font-size: 22px;
+  }
+
+  .tagline {
+    font-size: 13px;
+  }
+
+  .logo-left, .logo-right {
+    width: 100px;
+    height: 100px;
+  }
+
+  .contact-floating:hover {
+    width: 200px;
+    height: 160px;
+    padding: 12px;
+  }
+}
