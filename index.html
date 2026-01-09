@@ -1,58 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Online Shopping</title>
-
-  <!-- Link external CSS -->
-  <link rel="stylesheet" href="style.css?v=5">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopNova | Smart Shopping</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <header class="header">
-  <img src="sp.jpg" class="logo-left" alt="Left Logo">
-
-  <div class="header-text">
-    <h1><span class="brand-name">Online Shopping</span></h1>
-    <p class="tagline">
-      Experience a seamless shopping journey with high-performance gear, secure checkout, and reliable delivery right to your door.
-    </p>
-  </div>
-
-  <img src="sp2.jpg" class="logo-right" alt="Right Logo">
+<!-- Navbar -->
+<header>
+    <div class="logo">Shop<span>Nova</span></div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-  <div class="container">
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <h1 id="rain-text" class="rain-3d"></h1>
+    <p>Premium products with modern design & best prices</p>
+    <button onclick="scrollToProducts()">Shop Now</button>
+</section>
 
-    <div class="box">
-      <h2>About Us</h2>
-      <p>We are a passionate team of curators and trend-seekers dedicated to bringing the world’s most innovative and stylish products to your doorstep. What started as a vision to simplify online shopping has grown into a destination for quality-conscious customers who value both modern aesthetics and long-lasting durability.</p>
+<!-- Products Section -->
+<section class="products" id="products">
+    <h2>Featured Products</h2>
+
+    <div class="cube-scene">
+        <div class="cube">
+            <div class="cube-face front">
+                <img src="https://media.istockphoto.com/id/509464671/photo/smart-watch.jpg?s=2048x2048&w=is&k=20&c=EDBCZ8du4Nkop8GSIc42_vVZxeUBVU6cmQy0gO8ShTA=">
+                <h3>Smart Watch</h3>
+            </div>
+            <div class="cube-face back">
+                <img src="https://hearingaidaustralia.com.au/cdn/shop/products/A-02-standing-angled-1500x1125px_3000x_1500x1125_8ab96e14-1414-4441-8b8a-3612fe0f1b75.webp?v=1679274952&width=713">
+                <h3>Headphones</h3>
+            </div>
+            <div class="cube-face right">
+                <img src="https://assets.newatlas.com/dims4/default/4a1c106/2147483647/strip/true/crop/1200x800+0+0/resize/1200x800!/format/webp/quality/90/?url=https%3A%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2Fb9%2Fa8%2Fb662aecc46028ebddee7031792c2%2Fthe-touch-4g-is-only-a-little-larger-than-a-credit-card.jpg">
+                <h3>Smart Phone</h3>
+            </div>
+            <div class="cube-face left">
+                <img src="https://cdn.thewirecutter.com/wp-content/media/2024/07/laptopstopicpage-2048px-3685-2x1-1.jpg?width=2048&quality=75&crop=2:1&auto=webp">
+                <h3>Laptop</h3>
+            </div>
+            <div class="cube-face top">
+                <img src="https://media.istockphoto.com/id/618066222/photo/camera-capturing-a-forest.jpg?s=2048x2048&w=is&k=20&c=I1DoDZywT2BCk2pZJ_ssFZ-8EsXX8FTH_adEwAonKbM=">
+                <h3>Camera</h3>
+            </div>
+            <div class="cube-face bottom">
+                <img src="https://picsum.photos/300/300?6">
+                <h3>Speaker</h3>
+            </div>
+        </div>
+    </div>
+    <div class="product-list">
+    <h2>Popular Products</h2>
+
+    <div class="product-cards">
+        <div class="product-item">
+            <img src="https://picsum.photos/300/200?11">
+            <h3>Smart Watch</h3>
+            <p>Fitness tracking with premium design.</p>
+            <span>₹3,999</span>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product-item">
+            <img src="https://picsum.photos/300/200?12">
+            <h3>Wireless Headphones</h3>
+            <p>Noise cancellation & deep bass.</p>
+            <span>₹2,499</span>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product-item">
+            <img src="https://picsum.photos/300/200?13">
+            <h3>Smart Phone</h3>
+            <p>High performance & sleek look.</p>
+            <span>₹14,999</span>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product-item">
+            <img src="https://picsum.photos/300/200?14">
+            <h3>Bluetooth Speaker</h3>
+            <p>Powerful sound with long battery.</p>
+            <span>₹1,999</span>
+            <button>Buy Now</button>
+        </div>
+    </div>
+</div>
+
+</section>
+<div class="site-info">
+    <div class="info-box">
+        <h3>🚚 Fast Delivery</h3>
+        <p>Quick and reliable delivery across India with real-time tracking.</p>
     </div>
 
-    <div class="box">
-      <h2>Gallery</h2>
-      <img src="shp3.jpg" alt="Image 1">
-      <img src="sp4.avif" alt="Image 2">
+    <div class="info-box">
+        <h3>🔒 Secure Payments</h3>
+        <p>100% secure payment gateway with multiple payment options.</p>
     </div>
 
- <div class="contact-floating">
-    <div class="contact-label">Contact</div>
-    <div class="contact-info">
-      <p><strong>Address:</strong> Your Full Address, City</p>
-      <p><strong>Phone:</strong> +91 XXXXXXXXXX</p>
-      <p><strong>Email:</strong> yourmail@gmail.com</p>
+    <div class="info-box">
+        <h3>💬 24/7 Support</h3>
+        <p>Our support team is always available to help you anytime.</p>
     </div>
-  </div>
+</div>
 
 
 
+<!-- Contact Section -->
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@shopnova.com</p>
+    <p>Phone: +91 98765 43210</p>
+</section>
 
-  </div>
+<!-- Footer -->
+<footer>
+    © 2026 ShopNova. All Rights Reserved.
+</footer>
 
+<script src="script.js"></script>
 </body>
 </html>
